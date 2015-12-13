@@ -11,7 +11,7 @@
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 RAWSVG="src/cursors.svg"
-INDEX="src/index.theme"
+INDEX="src/cursor.theme"
 ALIASES="src/cursorList"
 
 
