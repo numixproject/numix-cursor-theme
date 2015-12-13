@@ -127,7 +127,7 @@ echo -e "\033[0KGenerating shortcuts... DONE"
 
 echo -ne "Copying Theme Index...\\r"
 	if ! [ -e "$OUTPUT/$INDEX" ] ; then
-		cp $INDEX "$OUTPUT/index.theme"
+		cp $INDEX "$OUTPUT/cursor.theme"
 	fi
 echo -e "\033[0KCopying Theme Index... DONE"
 
