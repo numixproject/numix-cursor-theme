@@ -10,7 +10,7 @@
 #fi
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
-RAWSVG="src/cursors.svg"
+RAWSVGS="src/svgs/"
 INDEX="src/cursor.theme"
 ALIASES="src/cursorList"
 
@@ -58,13 +58,8 @@ for CUR in src/config/*.cursor; do
 
 	echo -ne "\033[0KGenerating simple cursor pixmaps... $BASENAME\\r"
 
-	if [ "$DIR1X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 90  -f $RAWSVG -e "$DIR1X/$BASENAME.png" > /dev/null
-	fi
-
-	if [ "$DIR2X/$BASENAME.png" -ot $RAWSVG ] ; then
-		inkscape -i $BASENAME -d 180 -f $RAWSVG -e "$DIR2X/$BASENAME.png" > /dev/null
-	fi
+    inkscape -w 32  -f $RAWSVGS/$BASENAME.svg -e "$DIR1X/$BASENAME.png" > /dev/null
+	inkscape -w 64 -f $RAWSVGS/$BASENAME.svg -e "$DIR2X/$BASENAME.png" > /dev/null
 done
 echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
 
@@ -74,21 +69,11 @@ for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 do
 	echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 24 \\r"
 
-	if [ "$DIR1X/progress-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i progress-$i -d 90  -f $RAWSVG -e "$DIR1X/progress-$i.png" > /dev/null
-	fi
+	inkscape -w 32  -f $RAWSVGS/progress-$i.svg -e "$DIR1X/progress-$i.png" > /dev/null
+	inkscape -w 64 -f $RAWSVGS/progress-$i.svg -e "$DIR2X/progress-$i.png" > /dev/null
 
-	if [ "$DIR2X/progress-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i progress-$i -d 180 -f $RAWSVG -e "$DIR2X/progress-$i.png" > /dev/null
-	fi
-
-	if [ "$DIR1X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 90  -f $RAWSVG -e "$DIR1X/wait-$i.png" > /dev/null
-	fi
-
-	if [ "$DIR2X/wait-$i.png" -ot $RAWSVG ] ; then
-		inkscape -i wait-$i -d 180 -f $RAWSVG -e "$DIR2X/wait-$i.png" > /dev/null
-	fi
+	inkscape -w 32  -f $RAWSVGS/wait-$i.svg -e "$DIR1X/wait-$i.png" > /dev/null
+    inkscape -w 64 -f $RAWSVGS/wait-$i.svg -e "$DIR2X/wait-$i.png" > /dev/null
 done
 echo -e "\033[0KGenerating animated cursor pixmaps... DONE"
 
