@@ -1,207 +1,72 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="32px" viewBox="0 0 24 24" version="1.1">
-  <defs>
-    <filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
-      <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
-    </filter>
-    <mask id="mask0">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask1">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask2">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask3">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask4">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask5">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask6">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask7">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask8">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask9">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask10">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask11">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask12">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask13">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask14">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask15">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask16">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask17">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask18">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask19">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask20">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask21">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.6;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask22">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask23">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask24">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask25">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask26">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <mask id="mask27">
-      <g filter="url(#alpha)">
-        <rect x="0" y="0" width="24" height="24" style="fill:rgb(0%,0%,0%);fill-opacity:0.2;stroke:none;"/>
-      </g>
-    </mask>
-    <image id="image6" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image10" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image14" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image18" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image22" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image26" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image30" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image34" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image38" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image42" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image46" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image50" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image54" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image58" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image62" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image66" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image70" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image76" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image80" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image84" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image90" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image94" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image98" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image102" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image106" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image110" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image114" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-    <image id="image120" width="24" height="24" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAGElEQVRIie3BAQEAAACAkP6v7ggKAICqAQkYAAHO7iU+AAAAAElFTkSuQmCC"/>
-  </defs>
-  <g id="surface1">
-    <use xlink:href="#image6" mask="url(#mask0)"/>
-    <use xlink:href="#image10" mask="url(#mask1)"/>
-    <use xlink:href="#image14" mask="url(#mask2)"/>
-    <use xlink:href="#image18" mask="url(#mask3)"/>
-    <use xlink:href="#image22" mask="url(#mask4)"/>
-    <use xlink:href="#image26" mask="url(#mask5)"/>
-    <use xlink:href="#image30" mask="url(#mask6)"/>
-    <use xlink:href="#image34" mask="url(#mask7)"/>
-    <use xlink:href="#image38" mask="url(#mask8)"/>
-    <use xlink:href="#image42" mask="url(#mask9)"/>
-    <use xlink:href="#image46" mask="url(#mask10)"/>
-    <use xlink:href="#image50" mask="url(#mask11)"/>
-    <use xlink:href="#image54" mask="url(#mask12)"/>
-    <use xlink:href="#image58" mask="url(#mask13)"/>
-    <use xlink:href="#image62" mask="url(#mask14)"/>
-    <use xlink:href="#image66" mask="url(#mask15)"/>
-    <use xlink:href="#image70" mask="url(#mask16)"/>
-    <use xlink:href="#image76" mask="url(#mask17)"/>
-    <use xlink:href="#image80" mask="url(#mask18)"/>
-    <use xlink:href="#image84" mask="url(#mask19)"/>
-    <use xlink:href="#image90" mask="url(#mask20)"/>
-    <use xlink:href="#image94" mask="url(#mask21)"/>
-    <use xlink:href="#image98" mask="url(#mask22)"/>
-    <use xlink:href="#image102" mask="url(#mask23)"/>
-    <use xlink:href="#image106" mask="url(#mask24)"/>
-    <use xlink:href="#image110" mask="url(#mask25)"/>
-    <use xlink:href="#image114" mask="url(#mask26)"/>
-    <use xlink:href="#image120" mask="url(#mask27)"/>
-    <path style="fill-rule:evenodd;fill:rgb(92.54902%,92.54902%,92.54902%);fill-opacity:1;stroke-width:1.047603;stroke-linecap:butt;stroke-linejoin:miter;stroke:rgb(20.784314%,20.784314%,20.784314%);stroke-opacity:1;stroke-miterlimit:4;" d="M 89.59375 797.888222 C 89.59375 797.888222 88.848958 797.888222 88.848958 799.383013 C 88.848958 799.383013 89.229167 805.83093 89.244792 806.341347 L 88.5 806.341347 C 88.359375 805.856972 87.333333 800.877805 87.333333 800.877805 C 86.973958 799.336138 86.510417 799.060097 84.942708 799.481972 C 84.03125 799.898638 84.255208 800.26843 84.296875 801.091347 C 84.609375 803.351763 85.192708 806.01843 85.697917 808.117388 C 86.010417 809.42468 86.520833 810.73718 86.213542 810.888222 C 84.864583 811.544472 84.828125 809.013222 82.84375 808.36218 C 79.630208 807.377805 80.40625 809.471555 81.348958 810.606972 C 82.442708 811.92468 83.921875 814.721555 84.989583 816.481972 C 86.015625 818.164263 87.369792 818.836138 88.833333 818.836138 L 95.567708 818.836138 C 96.96875 818.86218 97.4375 814.935097 98.114583 811.008013 C 98.791667 807.075722 99.671875 803.138222 99.671875 803.138222 C 100.416667 800.89343 97.78125 800.179888 97.291667 801.341347 C 96.963542 802.992388 96.385417 805.216347 95.833333 807.060097 L 95.541667 807.060097 L 96.046875 799.898638 C 96.223958 798.976763 95.302083 798.398638 95.302083 798.398638 L 93.802083 798.398638 C 93.802083 798.398638 93.020833 798.992388 93.057292 799.898638 C 93.057292 799.898638 92.729167 805.695513 92.645833 806.185097 L 92.244792 806.185097 C 92.057292 805.67468 91.838542 799.383013 91.838542 799.383013 C 91.838542 797.888222 91.09375 797.888222 91.09375 797.888222 Z M 89.59375 797.888222 " transform="matrix(0.75,0,0,0.75,-55.5,-596.521635)"/>
-  </g>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r"
+   sodipodi:docname="size_hor.svg">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
+     id="namedview9"
+     showgrid="true"
+     inkscape:zoom="20.85965"
+     inkscape:cx="10.138575"
+     inkscape:cy="16.859745"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4141" />
+  </sodipodi:namedview>
+  <ellipse
+     style="opacity:1;fill:#ececec;fill-opacity:1;fill-rule:nonzero;stroke:#353535;stroke-width:0.74999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path4141"
+     cx="12"
+     cy="12"
+     rx="1.875"
+     ry="1.8749998" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4143"
+     d="m 21.410202,11.99926 -4.532895,2.626421 -0.0028,-5.2500532 z m 0,0"
+     style="fill:#f0514a;fill-opacity:1;fill-rule:nonzero;stroke:#333333;stroke-width:0.74999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1" />
+  <path
+     style="fill:#f0514a;fill-opacity:1;fill-rule:nonzero;stroke:#333333;stroke-width:0.74999988;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1"
+     d="m 2.5884698,11.99926 4.5328954,2.626422 0.0028,-5.2500546 z m 0,0"
+     id="path4145"
+     inkscape:connector-curvature="0" />
 </svg>
