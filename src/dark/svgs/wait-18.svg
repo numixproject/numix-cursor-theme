@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r"
+   sodipodi:docname="wait-18.svg">
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs9" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview7" />
+  <g
+     id="surface1">
+    <path
+       style=" stroke:none;fill-rule:nonzero;fill:rgb(42.352941%,44.313725%,76.862745%);fill-opacity:1;"
+       d="M 4.714844 13.78125 C 5.191406 15.734375 6.445312 17.453125 8.25 18.496094 C 10.875 20.011719 14.160156 19.796875 16.566406 17.949219 C 18.972656 16.105469 20.027344 12.988281 19.246094 10.058594 L 17.796875 10.445312 C 18.425781 12.792969 17.582031 15.28125 15.652344 16.761719 C 13.726562 18.238281 11.105469 18.410156 9 17.195312 C 6.898438 15.980469 5.734375 13.625 6.050781 11.21875 C 6.367188 8.808594 8.101562 6.832031 10.445312 6.203125 L 11.03125 8.378906 L 13.875 4.507812 L 9.476562 2.582031 L 10.058594 4.753906 C 7.132812 5.539062 4.960938 8.015625 4.566406 11.019531 C 4.441406 11.960938 4.496094 12.894531 4.714844 13.78125 Z M 4.714844 13.78125 "
+       id="path5" />
+  </g>
+</svg>

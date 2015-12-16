@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32px"
+   height="32px"
+   viewBox="0 0 24 24"
+   version="1.1"
+   id="svg2"
+   inkscape:version="0.91 r"
+   sodipodi:docname="progress-13.svg">
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs11" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview9" />
+  <g
+     id="surface1">
+    <path
+       style="fill-rule:nonzero;fill:#353535;fill-opacity:1;stroke-width:2.000026;stroke-linecap:butt;stroke-linejoin:round;stroke:#ececec;stroke-opacity:1;stroke-miterlimit:4;"
+       d="M 9 9 L 9 42.614583 L 9.927083 42.229167 C 15.166667 40.03125 21.21875 42.197917 23.885417 47.21875 L 25.822917 46.40625 C 24.114583 40.979167 26.8125 35.145833 32.052083 32.947917 L 32.979167 32.5625 Z M 9 9 "
+       transform="matrix(0.375,0,0,0.375,0,0)"
+       id="path5" />
+    <path
+       style=" stroke:none;fill-rule:nonzero;fill:rgb(42.352941%,44.313725%,76.862745%);fill-opacity:1;"
+       d="M 15.960938 21.746094 C 16.960938 21.691406 17.929688 21.277344 18.667969 20.542969 C 19.847656 19.363281 20.199219 17.585938 19.5625 16.046875 C 18.921875 14.507812 17.417969 13.5 15.75 13.5 L 15.75 15 C 16.8125 15 17.769531 15.636719 18.175781 16.621094 C 18.582031 17.601562 18.359375 18.730469 17.605469 19.480469 C 16.855469 20.234375 15.730469 20.457031 14.746094 20.050781 C 13.761719 19.640625 13.125 18.6875 13.125 17.625 L 14.625 17.625 L 12.375 15.375 L 10.125 17.625 L 11.625 17.625 C 11.625 19.292969 12.632812 20.796875 14.171875 21.433594 C 14.75 21.675781 15.359375 21.773438 15.960938 21.746094 Z M 15.960938 21.746094 "
+       id="path7" />
+  </g>
+</svg>
