@@ -62,7 +62,6 @@ mkdir -p "$OUTPUT_DARK/cursors"
 echo 'Making Folders... DONE';
 
 
-
 for CUR in src/config/*.cursor; do
 	BASENAME=$CUR
 	BASENAME=${BASENAME##*/}
@@ -120,32 +119,30 @@ done
 echo -e "Generating cursor theme... DONE"
 
 
-
 echo -ne "Generating shortcuts...\\r"
 while read ALIAS ; do
 	FROM=${ALIAS% *}
 	TO=${ALIAS#* }
-
-	if [ -e "$OUTPUT_LIGHT/cursors/$FROM" ] ; then
+    if [ -e "$OUTPUT_LIGHT/cursors/$FROM" ] ; then
 		continue
 	fi
+	ln -sf "$TO" "$OUTPUT_LIGHT/cursors/$FROM"
+	
 	
 	if [ -e "$OUTPUT_DARK/cursors/$FROM" ] ; then
 		continue
 	fi
-
-	ln -s "$TO" "$OUTPUT_LIGHT/cursors/$FROM"
-	ln -s "$TO" "$OUTPUT_DARK/cursors/$FROM"
+	ln -sf "$TO" "$OUTPUT_DARK/cursors/$FROM"
 done < $ALIASES
 echo -e "\033[0KGenerating shortcuts... DONE"
 
-
+exit
 
 echo -ne "Copying Theme Index...\\r"
-	if ! [ -e "$OUTPUT_LIGHT/$INDEX" ] ; then
+	if ! [ -e "$OUTPUT_LIGHT/$INDEX_LIGHT" ] ; then
 		cp $INDEX_LIGHT "$OUTPUT_LIGHT/cursor.theme"
 	fi
-	if ! [ -e "$OUTPUT_DARK/$INDEX" ] ; then
+	if ! [ -e "$OUTPUT_DARK/$INDEX_DARK" ] ; then
 		cp $INDEX_DARK "$OUTPUT_DARK/cursor.theme"
 	fi
 echo -e "\033[0KCopying Theme Index... DONE"
