@@ -25,4 +25,6 @@ Then restart or log out and back in for the changes to take effect.
 
 You need inkscape and xcursorgen installed. 
 
+Source icons are svg files stored in `src/{light/dark}/svgs`. 
+
 `cd` into the repos folder and run `./build.sh`, the respective cursor icons are then generated and saved to both the `Numix{-Light}`folders
