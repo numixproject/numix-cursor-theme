@@ -4,6 +4,8 @@ A cursor theme based on icons from the [Numix icon theme(https://github.com/numi
 
 ###Installing 
 
+First step: Download or clone the repository
+
 If you have Numix already installed in `/usr/share/icons` and you are using either the dark or light variant copy everything inside the `Numix{-Light}` folder to `/usr/share/icons/Numix{-Light}`/.
 
 If you have Numix installed locally, you can either copy the same folder to your Numix installation or if you want that your cursors show up everywhere, copy the whole `Numix{-Light}`folder to `/usr/share/icons`
