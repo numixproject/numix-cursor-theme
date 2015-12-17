@@ -1,6 +1,6 @@
 # numix-cursor-theme
 
-A cursor theme based on icons from the [Numix icon theme(https://github.com/numixproject/numix-icon-theme/issues)]
+A cursor theme based on icons from the [Numix icon theme](https://github.com/numixproject/numix-icon-theme/issues)
 
 ###Installing 
 
