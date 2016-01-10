@@ -1,14 +1,4 @@
 #!/bin/bash
-# Open initial output.
-# Prefer konsole if its there, otherwise fall back to xterminal.
-#tty -s; if [ $? -ne 0 ]; then
-#	if command -v konsole &>/dev/null; then
-#		konsole -e "$0"; exit;
-#		else
-#		xterm -e "$0"; exit;
-#	fi
-#fi
-
 
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 RAWSVGS_LIGHT="src/light/svgs"
