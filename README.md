@@ -8,6 +8,9 @@ Download or clone the repository
 
 If you have Numix already installed in `/usr/share/icons` and you are using either the dark or light variant copy everything inside the `Numix{-Light}` folder to `/usr/share/icons/Numix{-Light}`/.
 
+You may need to change the permission of the directory you want to copy to. You can do so by writing the following command in a terminal:
+    sudo chmod 777 /usr/share/icons/Numix{-Light}
+
 If you have Numix installed locally, you can either copy the same folder to your Numix installation or if you want that your cursors show up everywhere, copy the whole `Numix{-Light}`folder to `/usr/share/icons`
 
 Set the cursor theme using either `unity-tweak-tool` or a terminal :
