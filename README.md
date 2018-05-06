@@ -1,3 +1,11 @@
+# Changes from the original
+
+* Change Inkscape to ImageMagick because I don't have it.
+* Change output directorys because my grep doesn't support perl.
+* Link top_left_arrow to left_ptr because gtk2 and X apps requires it.
+
+The designs are never changed.
+
 # numix-cursor-theme
 
 A cursor theme based on icons from the [Numix icon theme](https://github.com/numixproject/numix-icon-theme/issues)

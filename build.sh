@@ -21,8 +21,8 @@ if [ ! -f $INDEX_LIGHT ] ; then
 fi
 
 
-if  ! type "inkscape" > /dev/null ; then
-    echo -e "\\nFAIL: inkscape must be installed"
+if  ! type "convert" > /dev/null ; then
+    echo -e "\\nFAIL: ImageMagick must be installed"
     exit 1
 fi
 
@@ -39,10 +39,12 @@ DIR2X_LIGHT="build/light/x2"
 DIR1X_LIGHT="build/light/x1"
 DIR2X_DARK="build/dark/x2"
 DIR1X_DARK="build/dark/x1"
-OUTPUT_LIGHT="$(grep --only-matching --perl-regex "(?<=Name\=).*$" $INDEX_LIGHT)"
-OUTPUT_LIGHT=${OUTPUT_LIGHT// /_}
-OUTPUT_DARK="$(grep --only-matching --perl-regex "(?<=Name\=).*$" $INDEX_DARK)"
-OUTPUT_DARK=${OUTPUT_DARK// /_}
+# OUTPUT_LIGHT="$(grep --only-matching --perl-regex "(?<=Name\=).*$" $INDEX_LIGHT)"
+# OUTPUT_LIGHT=${OUTPUT_LIGHT// /_}
+OUTPUT_LIGHT=Numix-Light
+# OUTPUT_DARK="$(grep --only-matching --perl-regex "(?<=Name\=).*$" $INDEX_DARK)"
+# OUTPUT_DARK=${OUTPUT_DARK// /_}
+OUTPUT_DARK=Numix
 mkdir -p "$DIR2X_DARK"
 mkdir -p "$DIR1X_DARK"
 mkdir -p "$DIR2X_LIGHT"
@@ -59,10 +61,14 @@ for CUR in src/config/*.cursor; do
 
     echo -ne "\033[0KGenerating simple cursor pixmaps... $BASENAME\\r"
 
-    inkscape -w 32  -f $RAWSVGS_LIGHT/"$BASENAME".svg -e "$DIR1X_LIGHT/$BASENAME.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_LIGHT/"$BASENAME".svg -e "$DIR2X_LIGHT/$BASENAME.png" > /dev/null
-    inkscape -w 32  -f $RAWSVGS_DARK/"$BASENAME".svg -e "$DIR1X_DARK/$BASENAME.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_DARK/"$BASENAME".svg -e "$DIR2X_DARK/$BASENAME.png" > /dev/null
+    convert -size 32x32 -background none $RAWSVGS_LIGHT/"$BASENAME".svg  $DIR1X_LIGHT/$BASENAME.png
+    convert -size 64x64 -background none $RAWSVGS_LIGHT/"$BASENAME".svg  $DIR2X_LIGHT/$BASENAME.png
+    convert -size 32x32 -background none $RAWSVGS_DARK/"$BASENAME".svg  $DIR1X_DARK/$BASENAME.png
+    convert -size 64x64 -background none $RAWSVGS_DARK/"$BASENAME".svg  $DIR2X_DARK/$BASENAME.png
+    # inkscape -w 32  -f $RAWSVGS_LIGHT/"$BASENAME".svg -e "$DIR1X_LIGHT/$BASENAME.png" > /dev/null
+    # inkscape -w 64 -f $RAWSVGS_LIGHT/"$BASENAME".svg -e "$DIR2X_LIGHT/$BASENAME.png" > /dev/null
+    # inkscape -w 32  -f $RAWSVGS_DARK/"$BASENAME".svg -e "$DIR1X_DARK/$BASENAME.png" > /dev/null
+    # inkscape -w 64 -f $RAWSVGS_DARK/"$BASENAME".svg -e "$DIR2X_DARK/$BASENAME.png" > /dev/null
 done
 echo -e "\033[0KGenerating simple cursor pixmaps... DONE"
 
@@ -72,15 +78,23 @@ for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 do
     echo -ne "\033[0KGenerating animated cursor pixmaps... $i / 24 \\r"
 
-    inkscape -w 32  -f $RAWSVGS_LIGHT/progress-$i.svg -e "$DIR1X_LIGHT/progress-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_LIGHT/progress-$i.svg -e "$DIR2X_LIGHT/progress-$i.png" > /dev/null
-    inkscape -w 32  -f $RAWSVGS_DARK/progress-$i.svg -e "$DIR1X_DARK/progress-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_DARK/progress-$i.svg -e "$DIR2X_DARK/progress-$i.png" > /dev/null
+    convert -size 32x32 -background none $RAWSVGS_LIGHT/progress-$i.svg $DIR1X_LIGHT/progress-$i.png
+    convert -size 64x64 -background none $RAWSVGS_LIGHT/progress-$i.svg $DIR2X_LIGHT/progress-$i.png
+    convert -size 32x32 -background none $RAWSVGS_DARK/progress-$i.svg $DIR1X_DARK/progress-$i.png
+    convert -size 64x64 -background none $RAWSVGS_DARK/progress-$i.svg $DIR2X_DARK/progress-$i.png
+    # inkscape -w 32  -f $RAWSVGS_LIGHT/progress-$i.svg -e "$DIR1X_LIGHT/progress-$i.png" > /dev/null
+    # inkscape -w 64 -f $RAWSVGS_LIGHT/progress-$i.svg -e "$DIR2X_LIGHT/progress-$i.png" > /dev/null
+    # inkscape -w 32  -f $RAWSVGS_DARK/progress-$i.svg -e "$DIR1X_DARK/progress-$i.png" > /dev/null
+    # inkscape -w 64 -f $RAWSVGS_DARK/progress-$i.svg -e "$DIR2X_DARK/progress-$i.png" > /dev/null
 
-    inkscape -w 32  -f $RAWSVGS_LIGHT/wait-$i.svg -e "$DIR1X_LIGHT/wait-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_LIGHT/wait-$i.svg -e "$DIR2X_LIGHT/wait-$i.png" > /dev/null
-    inkscape -w 32  -f $RAWSVGS_DARK/wait-$i.svg -e "$DIR1X_DARK/wait-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_DARK/wait-$i.svg -e "$DIR2X_DARK/wait-$i.png" > /dev/null
+    convert -size 32x32 -background none $RAWSVGS_LIGHT/wait-$i.svg $DIR1X_LIGHT/wait-$i.png
+    convert -size 64x64 -background none $RAWSVGS_LIGHT/wait-$i.svg $DIR2X_LIGHT/wait-$i.png
+    convert -size 32x32 -background none $RAWSVGS_DARK/wait-$i.svg $DIR1X_DARK/wait-$i.png
+    convert -size 64x64 -background none $RAWSVGS_DARK/wait-$i.svg $DIR2X_DARK/wait-$i.png
+    # inkscape -w 32  -f $RAWSVGS_LIGHT/wait-$i.svg -e "$DIR1X_LIGHT/wait-$i.png" > /dev/null
+    # inkscape -w 64 -f $RAWSVGS_LIGHT/wait-$i.svg -e "$DIR2X_LIGHT/wait-$i.png" > /dev/null
+    # inkscape -w 32  -f $RAWSVGS_DARK/wait-$i.svg -e "$DIR1X_DARK/wait-$i.png" > /dev/null
+    # inkscape -w 64 -f $RAWSVGS_DARK/wait-$i.svg -e "$DIR2X_DARK/wait-$i.png" > /dev/null
 done
 echo -e "\033[0KGenerating animated cursor pixmaps... DONE"
 

@@ -94,3 +94,4 @@ x-cursor default
 wayland-cursor default
 zoom-in default
 zoom-out default
+top_left_arrow left_ptr
