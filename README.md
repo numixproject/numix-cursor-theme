@@ -3,7 +3,7 @@ A cursor theme based on icons from the [Numix icon theme](https://github.com/num
 
 
 ### Installing
-Download and extract the [latest release](https://github.com/numixproject/numix-cursor-theme/releases) from GitHub. Then copy the `Numix-Cursor` and `Numix-Cursor-Light` folders to `/usr/share/icons`. Set the cursor theme using either your system settings or a terminal as follows:
+Download and extract the [latest release](https://github.com/numixproject/numix-cursor-theme/releases/latest) from GitHub. Then copy the `Numix-Cursor` and `Numix-Cursor-Light` folders to `/usr/share/icons`. Set the cursor theme using either your system settings or a terminal as follows:
 
 ```bash
 gsettings set org.gnome.desktop.interface cursor-theme 'Numix-Cursor{-Light}'
