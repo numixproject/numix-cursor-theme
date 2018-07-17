@@ -99,7 +99,7 @@ for CUR in src/config/*.cursor; do
     fi
 
     ERR="$( xcursorgen -p build/dark "$CUR" "$OUTPUT_DARK/cursors/$BASENAME" 2>&1 )"
-    
+
     if [[ "$?" -ne "0" ]]; then
         echo "FAIL: $CUR $ERR"
     fi
@@ -115,8 +115,8 @@ while read -r ALIAS ; do
         continue
     fi
     ln -sf "$TO" "$OUTPUT_LIGHT/cursors/$FROM"
-    
-    
+
+
     if [ -e "$OUTPUT_DARK/cursors/$FROM" ] ; then
         continue
     fi
@@ -124,7 +124,7 @@ while read -r ALIAS ; do
 done < $ALIASES
 echo -e "\033[0KGenerating shortcuts... DONE"
 
-exit
+# exit
 
 echo -ne "Copying Theme Index...\\r"
     if ! [ -e "$OUTPUT_LIGHT/$INDEX_LIGHT" ] ; then

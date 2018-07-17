@@ -1,30 +1,30 @@
-# numix-cursor-theme
+# Numix Cursor Theme
+A cursor theme based on icons from the [Numix icon theme](https://github.com/numixproject/numix-icon-theme). Code and assets licensed GPL v3+.
 
-A cursor theme based on icons from the [Numix icon theme](https://github.com/numixproject/numix-icon-theme/issues)
 
-###Installing 
+### Installing
+Download and extract the [latest release](https://github.com/numixproject/numix-cursor-theme/releases) from GitHub. Then copy the `Numix-Cursor` and `Numix-Cursor-Light` folders to `/usr/share/icons`. Set the cursor theme using either your system settings or a terminal as follows:
 
-Download or clone the repository
-
-If you have Numix already installed in `/usr/share/icons` and you are using either the dark or light variant copy everything inside the `Numix{-Light}` folder to `/usr/share/icons/Numix{-Light}`/.
-
-If you have Numix installed locally, you can either copy the same folder to your Numix installation or if you want that your cursors show up everywhere, copy the whole `Numix{-Light}`folder to `/usr/share/icons`
-
-Set the cursor theme using either `unity-tweak-tool` or a terminal :
-
-    gsettings set org.gnome.desktop.interface cursor-theme 'Numix{-Light}'
+```bash
+gsettings set org.gnome.desktop.interface cursor-theme 'Numix-Cursor{-Light}'
+```
 
 For system-wide change run the following:
 
-    sudo update-alternatives --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/Numix{-Light}/cursor.theme 55
-    sudo update-alternatives --set x-cursor-theme /usr/share/icons/Numix{-Light}/cursor.theme
+```bash
+sudo update-alternatives --install /usr/share/icons/default/index.theme x-cursor-theme /usr/share/icons/Numix-Cursor{-Light}/cursor.theme 55
+sudo update-alternatives --set x-cursor-theme /usr/share/icons/Numix-Cursor{-Light}/cursor.theme
+```
 
-Then restart or log out and back in for the changes to take effect.
+Restart or log out and back in for the changes to take effect.
 
 ### Building
+To build the themes from source you'll need Inkscape and xcursorgen installed. Then run the following in a terminal:
 
-You need inkscape and xcursorgen installed. 
+```bash
+git clone https://github.com/numixproject/numix-cursor-theme.git
+cd numix-cursor-theme/
+./build.sh
+```
 
-Source icons are svg files stored in `src/{light/dark}/svgs`. 
-
-`cd` into the repos folder and run `./build.sh`, the respective cursor icons are then generated and saved to both the `Numix{-Light}`folders
+The respective cursor icons are then generated and saved to both the `Numix-Cursor{-Light}` folders.
