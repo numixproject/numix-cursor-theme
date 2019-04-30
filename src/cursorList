@@ -94,3 +94,7 @@ x-cursor default
 wayland-cursor default
 zoom-in default
 zoom-out default
+ne-resize top_right_corner
+nw-resize top_left_corner
+se-resize bottom_right_corner
+sw-resize bottom_left_corner
