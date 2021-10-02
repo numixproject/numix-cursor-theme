@@ -43,6 +43,10 @@ mkdir -p "$OUTPUT_DARK/cursors"
 echo 'Making Folders... DONE';
 
 
+# export SVG as PNG, ran using `render $FILENAME $INPUTDIR $OUTPUTDIR $SIZE`
+render() { inkscape "$2"/"$1".svg -o "$3"/"$1".png -w "$4"; }
+
+
 for CUR in src/config/*.cursor; do
     BASENAME=$CUR
     BASENAME=${BASENAME##*/}
@@ -50,10 +54,10 @@ for CUR in src/config/*.cursor; do
 
     echo -ne "\\033[0KGenerating simple cursor pixmaps... $BASENAME\\r"
 
-    inkscape -w 32  -f $RAWSVGS_LIGHT/"$BASENAME".svg -e "$DIR1X_LIGHT/$BASENAME.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_LIGHT/"$BASENAME".svg -e "$DIR2X_LIGHT/$BASENAME.png" > /dev/null
-    inkscape -w 32  -f $RAWSVGS_DARK/"$BASENAME".svg -e "$DIR1X_DARK/$BASENAME.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_DARK/"$BASENAME".svg -e "$DIR2X_DARK/$BASENAME.png" > /dev/null
+    render "$BASENAME" "$RAWSVGS_LIGHT" "$DIR1X_LIGHT" 32
+    render "$BASENAME" "$RAWSVGS_LIGHT" "$DIR2X_LIGHT" 64
+    render "$BASENAME" "$RAWSVGS_DARK" "$DIR1X_DARK" 32
+    render "$BASENAME" "$RAWSVGS_DARK" "$DIR2X_DARK" 64
 done
 echo -e "\\033[0KGenerating simple cursor pixmaps... DONE"
 
@@ -62,15 +66,15 @@ for i in 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
 do
     echo -ne "\\033[0KGenerating animated cursor pixmaps... $i / 24 \\r"
 
-    inkscape -w 32  -f $RAWSVGS_LIGHT/progress-$i.svg -e "$DIR1X_LIGHT/progress-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_LIGHT/progress-$i.svg -e "$DIR2X_LIGHT/progress-$i.png" > /dev/null
-    inkscape -w 32  -f $RAWSVGS_DARK/progress-$i.svg -e "$DIR1X_DARK/progress-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_DARK/progress-$i.svg -e "$DIR2X_DARK/progress-$i.png" > /dev/null
+    render "progress-$i" "$RAWSVGS_LIGHT" "$DIR1X_LIGHT" 32
+    render "progress-$i" "$RAWSVGS_LIGHT" "$DIR2X_LIGHT" 64
+    render "progress-$i" "$RAWSVGS_DARK" "$DIR1X_DARK" 32
+    render "progress-$i" "$RAWSVGS_DARK" "$DIR2X_DARK" 64
 
-    inkscape -w 32  -f $RAWSVGS_LIGHT/wait-$i.svg -e "$DIR1X_LIGHT/wait-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_LIGHT/wait-$i.svg -e "$DIR2X_LIGHT/wait-$i.png" > /dev/null
-    inkscape -w 32  -f $RAWSVGS_DARK/wait-$i.svg -e "$DIR1X_DARK/wait-$i.png" > /dev/null
-    inkscape -w 64 -f $RAWSVGS_DARK/wait-$i.svg -e "$DIR2X_DARK/wait-$i.png" > /dev/null
+    render "wait-$i" "$RAWSVGS_LIGHT" "$DIR1X_LIGHT" 32
+    render "wait-$i" "$RAWSVGS_LIGHT" "$DIR2X_LIGHT" 64
+    render "wait-$i" "$RAWSVGS_DARK" "$DIR1X_DARK" 32
+    render "wait-$i" "$RAWSVGS_DARK" "$DIR2X_DARK" 64
 done
 echo -e "\\033[0KGenerating animated cursor pixmaps... DONE"
 
