@@ -11,7 +11,7 @@ RAWSVGS_LIGHT="src/light/svgs"
 INDEX_LIGHT="src/light/cursor.theme"
 RAWSVGS_DARK="src/dark/svgs"
 INDEX_DARK="src/dark/cursor.theme"
-ALIASES="src/cursorList"
+ALIASES="src/cursorList.csv"
 
 
 echo -ne "Checking Requirements..."
@@ -99,17 +99,23 @@ success
 
 echo -ne "Generating shortcuts... "
 while read -r ALIAS; do
-    FROM=${ALIAS% *}
-    TO=${ALIAS#* }
-    if [ -e "$OUTPUT_LIGHT/cursors/$FROM" ]; then
-        continue
-    fi
-    ln -sf "$TO" "$OUTPUT_LIGHT/cursors/$FROM"
+    LINK=${ALIAS%,*}
+    TARGET=${ALIAS#*,}
 
-    if [ -e "$OUTPUT_DARK/cursors/$FROM" ]; then
+    # skip the header line
+    if [ "$LINK" == "LINK" ] && [ "$TARGET" == "TARGET" ]; then
+        continue;
+    fi
+
+    if [ -e "$OUTPUT_LIGHT/cursors/$LINK" ]; then
         continue
     fi
-    ln -sf "$TO" "$OUTPUT_DARK/cursors/$FROM"
+    ln -sf "$TARGET" "$OUTPUT_LIGHT/cursors/$LINK"
+
+    if [ -e "$OUTPUT_DARK/cursors/$LINK" ]; then
+        continue
+    fi
+    ln -sf "$TARGET" "$OUTPUT_DARK/cursors/$LINK"
 done < $ALIASES
 success
 
